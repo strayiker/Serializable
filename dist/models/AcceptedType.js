@@ -1,2 +1,3 @@
+"use strict";
 /* eslint-disable @typescript-eslint/no-type-alias */
-export {};
+Object.defineProperty(exports, "__esModule", { value: true });

@@ -1,12 +1,15 @@
+"use strict";
 /* eslint-disable @typescript-eslint/no-unsafe-call, no-prototype-builtins */
-import { SerializationSettings } from "../models/SerializationSettings";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Serializable = void 0;
+const SerializationSettings_1 = require("../models/SerializationSettings");
 /**
  * Class how help you deserialize object to classes.
  *
  * @export
  * @class Serializable
  */
-export class Serializable {
+class Serializable {
     /**
      * Deserialize object from static method.
      *
@@ -206,6 +209,7 @@ export class Serializable {
         return thisProperty;
     }
 }
+exports.Serializable = Serializable;
 /**
  * Global setting for serialization and deserialization
  *
@@ -213,4 +217,4 @@ export class Serializable {
  * @type {SerializationSettings}
  * @memberof Serializable
  */
-Serializable.defaultSettings = new SerializationSettings();
+Serializable.defaultSettings = new SerializationSettings_1.SerializationSettings();

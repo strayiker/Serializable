@@ -1,11 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SnackCaseNamingStrategy = void 0;
-class SnackCaseNamingStrategy {
-    constructor() {
-        // eslint-disable-next-line no-console
-        console.warn("TS-Serializable: deprecated. Wrong name. Please use SnakeCaseNamingStrategy.");
-    }
+exports.SnakeCaseNamingStrategy = void 0;
+class SnakeCaseNamingStrategy {
     fromJsonName(name) {
         return name.replace(/_\w/gu, (group) => group[1].toUpperCase());
     }
@@ -16,4 +12,4 @@ class SnackCaseNamingStrategy {
             .toLowerCase();
     }
 }
-exports.SnackCaseNamingStrategy = SnackCaseNamingStrategy;
+exports.SnakeCaseNamingStrategy = SnakeCaseNamingStrategy;
